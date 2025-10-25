@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World - Full-Stack Demo Application</title>
+    <meta name="description" content="A full-stack Hello World application demonstrating Node.js backend with Express and modern frontend with Vanilla JavaScript">
+    <meta name="author" content="Fern Labs">
+    <meta name="keywords" content="hello world, nodejs, express, full-stack, demo, javascript">
+    
+    <!-- Backend Configuration -->
+    <meta name="backend-url" content="https://backend-morphvm-hc5yreuu.http.cloud.morph.so">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://frontend-morphvm-hc5yreuu.http.cloud.morph.so/">
+    <meta property="og:title" content="Hello World - Full-Stack Demo Application">
+    <meta property="og:description" content="A full-stack Hello World application demonstrating Node.js backend with Express and modern frontend">
+    <meta property="og:image" content="https://frontend-morphvm-hc5yreuu.http.cloud.morph.so/favicon.ico">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:url" content="https://frontend-morphvm-hc5yreuu.http.cloud.morph.so/">
+    <meta property="twitter:title" content="Hello World - Full-Stack Demo Application">
+    <meta property="twitter:description" content="A full-stack Hello World application demonstrating Node.js backend with Express and modern frontend">
+    <meta property="twitter:image" content="https://frontend-morphvm-hc5yreuu.http.cloud.morph.so/favicon.ico">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌍 Hello World Application</h1>
+            <p class="subtitle">Full-stack demo with Node.js backend</p>
+        </header>
+
+        <main>
+            <div class="card">
+                <h2>Backend Connection Status</h2>
+                <div id="connection-status" class="status-indicator">
+                    <span class="status-dot" id="status-dot"></span>
+                    <span id="status-text">Checking connection...</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Message from Backend</h2>
+                <div id="message-container">
+                    <div class="loading" id="loading">
+                        <div class="spinner"></div>
+                        <p>Fetching message...</p>
+                    </div>
+                    <div id="message-content" style="display: none;">
+                        <div class="message-box">
+                            <p class="message-text" id="message-text"></p>
+                            <p class="timestamp" id="timestamp"></p>
+                            <p class="version" id="version"></p>
+                        </div>
+                    </div>
+                    <div id="error-content" style="display: none;">
+                        <div class="error-box">
+                            <p class="error-text" id="error-text"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Manual Test</h2>
+                <button id="refresh-btn" class="btn">🔄 Refresh Message</button>
+            </div>
+
+            <div class="card info-card">
+                <h3>📋 API Information</h3>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <strong>Backend URL:</strong>
+                        <a href="https://backend-morphvm-hc5yreuu.http.cloud.morph.so" 
+                           target="_blank" 
+                           id="backend-url">
+                            https://backend-morphvm-hc5yreuu.http.cloud.morph.so
+                        </a>
+                    </div>
+                    <div class="info-item">
+                        <strong>Endpoint:</strong>
+                        <code>/api/hello</code>
+                    </div>
+                    <div class="info-item">
+                        <strong>Request Count:</strong>
+                        <span id="request-count">0</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Built with ❤️ using Node.js, Express, and Vanilla JavaScript</p>
+            <p class="footer-links">
+                <a href="https://github.com/tkfernlabs/hello-world-app-2025" target="_blank">
+                    📦 View on GitHub
+                </a>
+            </p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
