@@ -2,6 +2,9 @@
 
 A simple Hello World application with Express.js backend and a frontend.
 
+## GitHub Repository
+https://github.com/tkfernlabs/hello-world-app-2025
+
 ## Backend
 
 The backend is built with Express.js and provides the following endpoints:
